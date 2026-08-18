@@ -1,0 +1,8 @@
+[Unit]
+Description=Skrypt raportu systemowego (zadanie domowe 13.08)
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/system-report.sh
+StandardOutput=journal
+StandardError=journal

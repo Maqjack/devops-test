@@ -1,0 +1,9 @@
+[Unit]
+Description=Uruchamia system-report.service codziennie o 06:00 i 18:00
+
+[Timer]
+OnCalendar=*-*-* 06,18:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target
